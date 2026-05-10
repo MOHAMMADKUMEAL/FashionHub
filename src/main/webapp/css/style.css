@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f5f9;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 50px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo{
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.search-box input{
+
+    width: 350px;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: white;
+}
+
+.nav-links{
+
+    display: flex;
+
+    align-items: center;
+}
+
+.nav-links a{
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    color: #1e293b;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+
+    color: #2563eb;
+}
+
+/* HERO SECTION */
+
+.hero{
+
+    width: 90%;
+
+    height: 450px;
+
+    margin: 30px auto;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url("../images/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content h1{
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+}
+
+.hero-content p{
+
+    font-size: 24px;
+}
+
+/* PRODUCTS */
+
+.products-container{
+
+    width: 90%;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.product-card{
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    padding: 15px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+    position: relative;
+}
+
+.product-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+}
+
+.product-card img:hover{
+
+    transform: scale(1.03);
+}
+
+.product-card h3{
+
+    margin-top: 15px;
+
+    margin-bottom: 10px;
+
+    color: #0f172a;
+}
+
+.product-card p{
+
+    margin-top: 8px;
+
+    color: #475569;
+}
+
+.price{
+
+    color: #2563eb !important;
+
+    font-size: 22px !important;
+
+    font-weight: bold;
+
+    margin-top: 15px !important;
+}
+
+/* BUTTONS */
+
+.btn{
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+
+    background-color: #1e40af;
+}
+
+/* PRODUCT BADGE */
+
+.badge{
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    z-index: 10;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .search-box input{
+
+        width: 100%;
+    }
+
+    .nav-links{
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero{
+
+        height: 320px;
+    }
+
+    .hero-content h1{
+
+        font-size: 38px;
+    }
+
+    .hero-content p{
+
+        font-size: 18px;
+    }
+}
+
+.error-box{
+
+    background-color: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border: 1px solid #fecaca;
+}
