@@ -97,7 +97,7 @@ FashionHub
 ![Cart Page](screenshots/cart.png)
 
 ## Orders Page
-![Orders Page](screenshots/orders.png)
+![Orders Page](screenshots/myOrders.png)
 
 ---
 
