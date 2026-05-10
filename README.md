@@ -86,19 +86,18 @@ FashionHub
 
 ## Login Page
 
-
+![Login Page](screenshots/login.png)
 
 ## Products Page
+![Products Page](screenshots/products.png)
 
-Add screenshot here.
 
 ## Cart Page
 
-Add screenshot here.
+![Cart Page](screenshots/cart.png)
 
 ## Orders Page
-
-Add screenshot here.
+![Orders Page](screenshots/orders.png)
 
 ---
 
